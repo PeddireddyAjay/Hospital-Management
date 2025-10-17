@@ -1,0 +1,80 @@
+.appointments-container {
+  padding: 25px;
+  background-color: #f4f7fb;
+  min-height: 100vh;
+}
+
+.appointments-container h2,
+.appointments-container h3 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.appointment-form select,
+.appointment-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 180px;
+  flex: 1;
+}
+
+.appointment-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 15px;
+}
+
+.appointments-table th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.appointments-table tr:hover {
+  background-color: #f1f5ff;
+}
+
+/* Highlight status */
+.appointments-table td:last-child {
+  font-weight: bold;
+  color: #28a745; /* Green for confirmed */
+}
